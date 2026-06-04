@@ -330,3 +330,11 @@ Berikut adalah hasil eksekusi dan ekspektasi *output* pada terminal dari masing-
   * **Output Ditolak:** Selalu mendapatkan pesan *Permission denied* jika mencoba masuk ke `/root` maupun ke seluruh direktori milik kakak-kakaknya.
 
 **Catatan:** Semua *user* (dari `root` hingga `kids`) memiliki akses bebas penuh (baca, tulis, eksekusi) pada direktori sementara dengan mengeksekusi `cd /tmp`.
+
+<img width="818" height="422" alt="Screenshot From 2026-06-04 19-52-58" src="https://github.com/user-attachments/assets/a41ba90e-a94b-4b17-9064-15822f7dfdca" />
+<img width="818" height="422" alt="Screenshot From 2026-06-04 19-54-17" src="https://github.com/user-attachments/assets/694bdb19-1d63-4143-a508-c1ff66093d54" />
+<img width="708" height="395" alt="Screenshot From 2026-06-04 20-03-03" src="https://github.com/user-attachments/assets/cc0f9baf-c847-4c28-a77b-ca2bbfebeaf4" />
+<img width="708" height="395" alt="Screenshot From 2026-06-04 20-03-58" src="https://github.com/user-attachments/assets/7e337b49-bfdd-4f3c-9ccd-8b7ea15d44fd" />
+
+
+
