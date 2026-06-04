@@ -21,6 +21,23 @@ soal_1/
 
 ### 1. Kompilasi Kernel (Soal 2)
 Skrip `kernel.sh` mengunduh dan mengompilasi Linux Kernel versi 6.1.1. Hasil kompilasi disimpan sebagai `osboot/bzImage`.
+```
+#!/bin/bash
+
+mkdir -p osboot
+
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.1.tar.xz
+
+tar -xf linux-6.1.1.tar.xz
+
+cd linux-6.1.1
+
+make defconfig
+
+make -j$(nproc)
+
+cp arch/x86/boot/bzImage ../osboot/
+```
 ```bash
 ./kernel.sh
 ```
