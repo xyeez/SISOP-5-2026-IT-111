@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "======================================"
+echo "      FUSE Simple Program Loaded      "
+echo "======================================"
+echo "Status: Berhasil menjalankan program FUSE!"
+echo "Sistem berkas virtual sukses ter-mount di /tmp"

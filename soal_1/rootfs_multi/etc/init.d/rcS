@@ -1,0 +1,31 @@
+#!/bin/sh
+ifconfig lo 127.0.0.1 up
+ifconfig eth0 10.0.2.15 netmask 255.255.255.0 up
+route add default gw 10.0.2.2
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+# Pasang Password menggunakan chpasswd dari busybox-static
+echo "root:root123" | chpasswd
+echo "henn:henn123" | chpasswd
+echo "hann:hann123" | chpasswd
+echo "viii:viii123" | chpasswd
+echo "kids:kids123" | chpasswd
+
+mkdir -p /home/henn /home/hann /home/viii /home/kids
+
+chown henn:henn /home/henn
+chmod 700 /home/henn
+
+chown hann:hann_group /home/hann
+chmod 770 /home/hann
+
+chown viii:viii_group /home/viii
+chmod 770 /home/viii
+
+chown kids:kids_group /home/kids
+chmod 770 /home/kids
+
+# ---> FIX UID 1000: Merebut kembali hak akses /root agar Henn ditolak <---
+chown root:root /root
+chmod 700 /root
+chmod 777 /tmp

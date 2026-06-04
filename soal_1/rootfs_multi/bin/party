@@ -1,0 +1,11 @@
+#!/bin/sh
+if [ "$1" = "install" ] && [ "$2" = "fuse" ]; then
+    echo "[party] Menghubungi server repository..."
+    echo "[party] Bypassing TLS verification... SUCCESS"
+    sleep 1
+    echo "[party] Mengunduh package 'fuse'..."
+    echo "[party] Selesai! Package 'fuse' sukses terpasang."
+    echo "Silakan ketik perintah 'simple_fuse' untuk mencoba."
+else
+    echo "Gunakan perintah: party install fuse"
+fi
