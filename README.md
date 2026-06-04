@@ -1,6 +1,6 @@
 # Soal 1 - Farewell Party
 
-** Deskripsi Tugas:**
+**Deskripsi Tugas:**
 Pada soal ini, praktikan ditugaskan untuk merakit sebuah sistem operasi Linux minimalis dari awal (*from scratch*). Sistem operasi ini harus dikompilasi menggunakan Kernel Linux 6.1.1 dan utilitas BusyBox. OS yang dibangun harus mendukung mode *single-user* dan *multi-user* dengan pembagian hak akses direktori yang spesifik. Selain itu, OS harus dapat dikemas menjadi *bootable ISO*, memiliki konektivitas internet, dan dilengkapi dengan *package manager* kustom bernama `party` untuk menginstal serta menjalankan program FUSE.
 
 ##  Struktur Direktori
